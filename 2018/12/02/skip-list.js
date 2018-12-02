@@ -25,7 +25,7 @@ class Node{
  * 定义SkipList类
  */
 class SkipList{
-  // levelCount属性表示了当前跳表的索引的级数
+  // levelCount属性表示了当前跳表索引的总共级数
   levelCount = 1;
   // head属性是一个Node类的实例，指向整个链表的开始
   head = new Node();
