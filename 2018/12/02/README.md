@@ -1,3 +1,21 @@
 # 使用JavaScript实现SkipList这种数据结构
 
-Data Structure and Algorithms Abbreviation DSA
+代码的实现参考了。。。
+
+## 前言
+
+## SkipList的具体实现
+首先我们先粗略的看一下JavaScript版本的代码，具体如下所示：
+```javascript
+```
+如果你看完上面的代码，感觉还是没有太明白；也不要着急，下面我会仔细的讲解一下上面代码的思路
+
+首先，我们定义了一个`Node`类，这个类生成的实例有三个属性；分别是`data`，`maxLevel`和`refer`
+具体的解释可以看代码里面的注释；这里要注意的是`refer`这个属性，它是一个长度为`MAX_LEVEL`的数组，
+数组里面的值是一个指向别的节点的索引。可以大概看下面这张图来加深一下理解：
+
+![](images/sl_1.png)
+
+## 运算的时间
+
+
