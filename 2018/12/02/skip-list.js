@@ -2,6 +2,8 @@
  * author dreamapplehappy
  */
 
+// 代码使用了ES6以及更高版本的JavaScript来表示，需要使用Babel之类的工具处理一下才可以在Node或者浏览器中运行
+
 // 定义了跳表索引的最大级数
 const MAX_LEVEL = 16;
 
