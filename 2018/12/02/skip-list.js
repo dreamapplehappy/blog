@@ -78,6 +78,7 @@ class SkipList{
 	for(let i = this.levelCount - 1; i >= 0; i--) {
 	  while(p.refer[i] !== undefined && p.refer[i].data < value) {
 		p = p.refer[i];
+		// 标记1，此处用于文章的说明
 	  }
 	}
 

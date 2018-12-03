@@ -1,12 +1,142 @@
 # 使用JavaScript实现SkipList这种数据结构
 
-代码的实现参考了。。。
+> 代码的实现参考了[SkipList.java](https://github.com/wangzheng0822/algo/blob/master/java/17_skiplist/SkipList.java)
 
 ## 前言
+以后再写。。。
 
 ## SkipList的具体实现
+
 首先我们先粗略的看一下JavaScript版本的代码，具体如下所示：
+
 ```javascript
+/**
+ * author dreamapplehappy
+ */
+
+// 代码使用了ES6以及更高版本的JavaScript来表示，需要使用Babel之类的工具处理一下才可以在Node或者浏览器中运行
+
+// 定义了跳表索引的最大级数
+const MAX_LEVEL = 16;
+
+/**
+ * 定义Node类，用来辅助实现跳表功能
+ */
+class Node{
+  // data属性存放了每个节点的数据
+  data = -1;
+  // maxLevel属性表明了当前节点处于整个跳表索引的级数
+  maxLevel = 0;
+  // refer是一个有着MAX_LEVEL大小的数组，refer属性存放着很多个索引
+  // 如果用p表示当前节点，用level表示这个节点处于整个跳表索引的级数；那么p[level]表示在level这一层级p节点的下一个节点
+  // p[level-n]表示level级下面n级的节点
+  refer = new Array(MAX_LEVEL);
+}
+
+/**
+ * 定义SkipList类
+ */
+class SkipList{
+  // levelCount属性表示了当前跳表索引的总共级数
+  levelCount = 1;
+  // head属性是一个Node类的实例，指向整个链表的开始
+  head = new Node();
+
+  // 在跳里面插入数据的时候，随机生成索引的级数
+  static randomLevel() {
+	let level = 1;
+	for(let i = 1; i < MAX_LEVEL; i++) {
+	  if(Math.random() < 0.5) {
+		level++;
+	  }
+	}
+	return level;
+  }
+
+  /**
+   * 向跳表里面插入数据
+   * @param value
+   */
+  insert(value) {
+	const level = SkipList.randomLevel();
+	const newNode = new Node();
+	newNode.data = value;
+	newNode.maxLevel = level;
+	const update = new Array(level).fill(new Node());
+	let p = this.head;
+	for(let i = level - 1; i >= 0; i--) {
+	  while(p.refer[i] !== undefined && p.refer[i].data < value) {
+		p = p.refer[i];
+	  }
+	  update[i] = p;
+	}
+	for(let i = 0; i < level; i++) {
+	  newNode.refer[i] = update[i].refer[i];
+	  update[i].refer[i] = newNode;
+	}
+	if(this.levelCount < level) {
+	  this.levelCount = level;
+	}
+  }
+
+  /**
+   * 查找跳表里面的某个数据节点，并返回
+   * @param value
+   * @returns {*}
+   */
+  find(value) {
+	if(!value){return null}
+	let p = this.head;
+	for(let i = this.levelCount - 1; i >= 0; i--) {
+	  while(p.refer[i] !== undefined && p.refer[i].data < value) {
+		p = p.refer[i];
+		// 标记1，此处用于文章的说明
+	  }
+	}
+
+	if(p.refer[0] !== undefined && p.refer[0].data === value) {
+	  return p.refer[0];
+	}
+	return null;
+  }
+
+  /**
+   * 移除跳表里面的某个数据节点
+   * @param value
+   * @returns {*}
+   */
+  remove(value) {
+	let _node;
+	let p = this.head;
+	const update = new Array(new Node());
+	for(let i = this.levelCount - 1; i >= 0; i--) {
+	  while(p.refer[i] !== undefined && p.refer[i].data < value){
+		p = p.refer[i];
+	  }
+	  update[i] = p;
+	}
+
+	if(p.refer[0] !== undefined && p.refer[0].data === value) {
+	  _node = p.refer[0];
+	  for(let i = 0; i <= this.levelCount - 1; i++) {
+		if(update[i].refer[i] !== undefined && update[i].refer[i].data === value) {
+		  update[i].refer[i] = update[i].refer[i].refer[i];
+		}
+	  }
+	  return _node;
+	}
+	return null;
+  }
+
+  // 打印跳表里面的所有数据
+  printAll() {
+	let p = this.head;
+	while(p.refer[0] !== undefined) {
+	  // console.log(p.refer[0].data)
+	  p = p.refer[0];
+	}
+  }
+}
 ```
 如果你看完上面的代码，感觉还是没有太明白；也不要着急，下面我会仔细的讲解一下上面代码的思路
 
@@ -14,7 +144,7 @@
 具体的解释可以看代码里面的注释；这里要注意的是`refer`这个属性，它是一个长度为`MAX_LEVEL`的数组，
 数组里面的值是一个指向别的节点的索引。可以大概看下面这张图来加深一下理解：
 
-![](images/sl_1.png)
+![图1](images/sl_1.png)
 
 不知道上面的图大家有没有看得更明白一点，如果没有的话，也没有关系；我们先继续往下面走。
 
@@ -32,7 +162,7 @@
 讲解`insert`方法的时候再给大家讲解一下)。然后是两层循环，外层是一个`for`循环，里面是一个`while`循环；
 我们这个时候就可以看下面这张图了：
 
-![](images/sl_2.png)
+![图2](images/sl_2.png)
 
 首先我们需要知道的是，`for`循环是从SkipList的顶层索引开始循环，方向是从上到下的；`while`循环则是从某一层的索引开始，
 然后从左到右循环；当然我们说的从上到下和从左到右，都是对照我们上面的那张图来进行说明的。
@@ -56,8 +186,35 @@
 的下一个节点的`data`值要小于我们查找的`value`，如果循环结束，那说明当前节点的下一个节点的值大于或者等于`value`值，所以还需要进行以此判断)。
 如果是的话，就返回`p.refer[i]`，如果不是就返回一个`null`。
 
+我们可以用下面这个表格来表示上面的描述，表格表示的是代码中`find`函数里面注释的**标记1**，这个表格的表示应该更直观一些吧。
 
-然后我们准备
+| 运行次数 | 当前P指向的节点 | 索引的级数 | 数据的层数 | 运行的循环 |
+|:----:|:----:|:----:|:----:| :----: |
+| 0 | head | 3 | 4 | - |
+| 1 | node(1) | 3 | 4 | [for, while]|
+| 2 | node(1) | 2 | 3 | [for, while] |
+| 3 | node(6) | 2 | 3 | [while] |
+| 4 | node(6) | 1 | 2 | [for, while] |
+| 5 | node(6) | 0 | 1 | [for, while] |
+
+如果上面的描述你都理解的话，那么**SkipList**的`insert`和`remove`方法你应该很快就明白了；
+这两个方法我们就不再像上面那样详细的讲解了；我们会大概的说明一下实现的原理。
+
+关于`insert`方法，在插入一个数据的时候，我们首先生成一个随机的`level`值，用来表示这个数据索引的级数；
+然后我们生成一个新的节点`newNode`，接下来我们创建一个`update`数组，这个数组的长度是`level`；
+里面存放的是一些节点。
+
+![图3](images/sl_3.png)
+
+接下来就是熟悉的两层循环，通过上面的那个表格我们可以看到，`update`数组里面保存的就是
+每次`while`循环终止的那个节点，就是上面图片3中紫色线框框起来的节点；然后我们又运行了一个`for`循环，
+接下来的代码很有技巧，我们把新的节点的`refer[i]`(**i**表示的是**索引的级数**)指向下一个节点，然后把`update[i]`节点的`refer[i]`指向新的节点
+当循环完成的时候，我们就把这个数据插入到了原来的**SkipList**当中。更清晰直观的过程可以看下面的图片。
+
+![图4](images/sl_4.png)
+
+然后，我们还需要看一下当前的`level`是否大于**SkipList**的最大级数也就是`levelCount`，如果大于当前的`levelCount`，
+我们还需要更新**SkipList**的`levelCount`。
 
 
 
