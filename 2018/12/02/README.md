@@ -1,5 +1,7 @@
 # 使用JavaScript实现SkipList这种数据结构
 
+[![](https://badge.juejin.im/entry/5c061785f265da61542d6501/likes.svg?style=flat)](https://juejin.im/entry/5c061785f265da61542d6501/detail)
+
 > 代码的实现参考了[SkipList.java](https://github.com/wangzheng0822/algo/blob/master/java/17_skiplist/SkipList.java)
 
 ## 前言
@@ -256,3 +258,7 @@ Node环境下：
 通过上面的表格我们可以看到，使用**SKipList**的效率是很高的。到这里整篇文章也就算结束啦，文章中可能会有不严谨的地方，也欢迎大家指出来，我们一起共同进步。
 
 如果你有什么想说的，可以在[这里](https://github.com/dreamapplehappy/blog/issues/1)发表评论.
+
+[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/)
+本文采用[知识共享署名-非商业性使用-禁止演绎 3.0
+未本地化版本许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)进行许可。
