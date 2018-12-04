@@ -259,6 +259,7 @@ Node环境下：
 
 如果你有什么想说的，可以在[这里](https://github.com/dreamapplehappy/blog/issues/1)发表评论.
 
-[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/)
-本文采用[知识共享署名-非商业性使用-禁止演绎 3.0
+------
+
+[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/)  本作品采用[知识共享署名-非商业性使用-禁止演绎 3.0
 未本地化版本许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)进行许可。
