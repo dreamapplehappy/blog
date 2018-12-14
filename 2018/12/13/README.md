@@ -2,6 +2,8 @@
 
 ### 前言
 
+这是**掌握RxJS系列**的第三篇文章，这篇文章主要是和大家一起来剖析一下`RxJS`中的`Observable`。
+
 ### 初步了解
 
 + 创建一个`Observable`
@@ -256,5 +258,27 @@
 
 ### 深入了解
 
+接下来我们来深入了解一下我们上面学习到的一些内容，首先是[`Observable`](https://rxjs-dev.firebaseapp.com/api/index/class/Observable)，
+这是一个类，用来创建`Observable`；我们一般会使用它的[`create`](https://rxjs-dev.firebaseapp.com/api/index/class/Observable#create)
+方法来创建一个`Observable`对象；`create`方法其实调用的是`Observable`的构造器[`constructor()`](https://rxjs-dev.firebaseapp.com/api/index/class/Observable#constructor())
 
+那我们来看一下这个构造器需要传递的参数是什么，看下面的[代码](https://github.com/ReactiveX/rxjs/blob/master/src/internal/Observable.ts#L37)
+```
+...
+constructor(subscribe?: (this: Observable<T>, subscriber: Subscriber<T>) => TeardownLogic)
+...
+```
+我们可以知道，传递的参数是一个`subscribe`，它是一个函数；这个函数会在`Observable`对象调用`subscribe`方法的时候执行；这个函数有一个[`Subscriber`](https://rxjs-dev.firebaseapp.com/api/index/class/Subscriber)类型的值，
+然后我们可以通过这个`subscriber`，发送三种类型的通知，并且可以传递值给外面的[`observer`](https://rxjs-dev.firebaseapp.com/api/index/class/Observable#subscribe-)，
+或者相应接收值的函数。
 
+`Observable`对象的[`subscribe`](https://rxjs-dev.firebaseapp.com/api/index/class/Observable#subscribe-)方法的参数可以是一个[`Observer`](https://rxjs-dev.firebaseapp.com/api/index/interface/Observer)类型的对象，
+或者一到三个函数；如果是一个对象的话，需要满足[`Observer`](https://rxjs-dev.firebaseapp.com/api/index/interface/Observer)接口的一些属性；
+一般情况下这个对象上面至少有一个`next`方法，来接收相应的`Observable`传递过来的值。如果给`subscribe`方法传递的参数是函数的话，那么可以传递一到三个，
+第一个接收`Next`类型通知，第二个接收`Error`类型的通知，第三个接收`Complete`类型的通知；如果相应的通知可以传递值的话，那么我们函数的参数就是相应要传递的值。
+
+`Observable`对象调用`subscribe`方法之后，返回的是一个[`Subscription`](https://rxjs-dev.firebaseapp.com/api/index/class/Subscription)类型的对象，它有一个[`unsubscribe`](https://rxjs-dev.firebaseapp.com/api/index/class/Subscription#unsubscribe)方法，可以取消`Observable execution`的执行过程。
+
+### 结束语
+
+到这里我们这一篇文章就算是结束啦，如果文章中有什么不正确的地方，也希望大家指出来；以免误导别的读者。如果你有什么建议，反馈或者想法可以写在[这里](https://github.com/dreamapplehappy/blog/issues/2)。
