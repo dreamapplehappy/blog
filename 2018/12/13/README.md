@@ -282,3 +282,5 @@ constructor(subscribe?: (this: Observable<T>, subscriber: Subscriber<T>) => Tear
 ### 结束语
 
 到这里我们这一篇文章就算是结束啦，如果文章中有什么不正确的地方，也希望大家指出来；以免误导别的读者。如果你有什么建议，反馈或者想法可以写在[这里](https://github.com/dreamapplehappy/blog/issues/2)。
+
+版权声明：[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/) [共享-保持署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/)

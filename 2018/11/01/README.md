@@ -57,3 +57,5 @@ val: 3
 
 参考资料：
 [Observable](https://rxjs-dev.firebaseapp.com/guide/observable)
+
+版权声明：[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/) [共享-保持署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/)
