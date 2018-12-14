@@ -15,6 +15,7 @@
 | ----------- | ----------- | ------ |
 | **Pull**      | **被动的**：当消费者请求数据的时候才生产数据      | **主动的**：决定什么时候需要数据 |
 | **Push**   | **主动的**：按照自己的节奏生产数据       | **被动的**：接收数据并作出反应 |
+
 在**JavaScript**中属于`Pull`类型的有[`Function`](https://developer.mozilla.org/en-US/docs/Glossary/Function)和[`Iterator `](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)，其中`Function`每次只能同步返回一个结果，而[`Generator`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Generator)(它符合[`可迭代协议`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols#iterable)和[`迭代器协议`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols#iterator))在每次迭代的时候可以同步返回多个结果；属于`Push`类型的有[`Promise`](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise)，`Promise`可以异步的返回一个结果，但是不可以异步返回多个结果；所以在`RxJS`中，有[`Observable`](https://rxjs-dev.firebaseapp.com/guide/observable)这个对象，`Observable`可以**同步**或者**异步**的返回多个结果，相当于在`Push`这个方式中，添加了一种可以返回多个值的情况。
 我们也可以使用下面的表格来表示上面说的内容：
 
@@ -22,6 +23,7 @@
 | --- | ---- | --- |
 | **Pull**  |   [Function](https://developer.mozilla.org/en-US/docs/Glossary/Function) | [Iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) |
 | **Push** | [Promise](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Promise)  | [Observable](https://rxjs-dev.firebaseapp.com/class/es6/Observable.js~Observable.html) |
+
 还有一点需要注意的是：**`Function`，`Iterator`，`Observable`都是延迟计算的，也就是说函数只有在被调用的时候才会进行运算，迭代器只有进行迭代的时候才会进行计算，`Observable`(可观察对象)只有在被`subscribe`(订阅)的时候才会进行运算。**
 下面我们开始创建一个`Observable`，并且订阅这个`Observable`；代码如下：
 ```javascript
