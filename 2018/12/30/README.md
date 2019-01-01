@@ -206,4 +206,8 @@ console.log(dog.constructor === Dog); // true
 这篇文章到这里基本上可以告一段落了，但是其实关于JavaScript的原型与继承还有许多内容，也还有许多可以研究的地方；但是这篇文章到这里就算是结束了。
 我后面还会写一些关于JavaScript原型与继承的内容，如果大家有兴趣的话，可以关注一下。点击[这里](https://github.com/dreamapplehappy/blog/issues/3)可以发表留言。
 
+如果本文对你有帮助，可以赞赏一下：
+
+![](../../../resource/images/wechat-appreciate.jpeg)
+
 版权声明：[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/) [共享-保持署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/)
