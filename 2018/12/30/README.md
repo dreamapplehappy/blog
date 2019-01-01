@@ -208,6 +208,6 @@ console.log(dog.constructor === Dog); // true
 
 如果本文对你有帮助，可以赞赏一下：
 
-![](../../../resource/images/wechat-appreciate.jpeg |width=300)
+![](../../../resource/images/wechat-appreciate.jpeg | width=300)
 
 版权声明：[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/) [共享-保持署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/)
