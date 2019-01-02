@@ -1,8 +1,8 @@
 ## JavaScript原型与继承的秘密
 
-作者：[dreamapplehappy](https://github.com/dreamapplehappy)
+作者: [dreamapplehappy](https://github.com/dreamapplehappy)
 
-日期: 2018-12-30
+日期: **2018-12-30**
 
 标签: `JavaScript`
 
@@ -11,21 +11,21 @@
 > 我们最想夸耀的事物，就是我们所未拥有的事物
 《罗生门》- 芥川龙之介
 
-JavaScript的原型与继承是每一个学习JavaScript的同学都会面对的一个问题，也是很对面试的必考题目；
+JavaScript的原型与继承是每一个学习JavaScript的同学都会面对的一个问题，也是很多面试的必考题目；
 但是经常会有一些同学对此一知半解，或者是浅尝辄止；这是因为很多讲解原型与继承的文章写的不是那么通俗易懂，
 而本文的目的就是一次性的帮助大家把这一系列的知识点梳理清楚；希望我这次能够做一个好的投球手。
 
 首先我们需要知道的是，JavaScript是一种动态语言，本质上说它是没有`Class`(类)的；但是它也需要一种继承的方式，
 那就是原型继承；JavaScript对象的一些属性和方法都是继承自别的对象。
 
-很多同学对JavaScript的原型和继承不是很理解，一个重要的原因就是大家没有理解`__proto__`和`prototype`这两个属性的意思。
-接下来我们先来好好梳理一下这两个属性，看看它们存在哪里，代表了什么意义，又有什么作用；
+**很多同学对JavaScript的原型和继承不是很理解，一个重要的原因就是大家没有理解`__proto__`和`prototype`这两个属性的意思。
+接下来我们先来好好梳理一下这两个属性，看看它们存在哪里，代表了什么意义，又有什么作用。**
 
 首先来说一下`__proto__`这个属性吧，我们需要知道的是，除了`null`和`undefined`，JavaScript中的所有数据类型都有这个属性；
-它表示的意义是：当我们访问一个对象的某个属性的时候，如果这个对象自身不存在这个属性，
+它表示的意义是：**当我们访问一个对象的某个属性的时候，如果这个对象自身不存在这个属性，
 那么就从这个对象的`__proto__`(*为了方便下面描述，这里暂且把这个属性称作`p0`*)属性上面
 继续查找这个属性，如果`p0`上面还存在`__proto__`(p1)属性的话，那么就会继续在`p1`上面查找响应的属性，
-直到查找到这个属性，或者没有`__proto__`属性为止。我们可以用下面这两幅图来表示：
+直到查找到这个属性，或者没有`__proto__`属性为止。** 我们可以用下面这两幅图来表示：
 
 ![__proto__](./images/1.png)
 
@@ -60,8 +60,8 @@ console.log(obj.name); // dreamapple
 
 说完`__proto__`属性，接下来我们就要好好的来理解一下`prototype`属性了；首先我们需要记住的是，这个属性一般只存在于**函数对象**上面；
 只要是能够作为**构造器**的函数，他们都包含这个属性。也就是说，只要这个函数能够通过使用`new`操作符来生成一个新的对象，
-那么这个函数肯定具有`prototype`属性；因为我们自定义的函数都可以通过`new`操作符生成一个对象，所以我们自定义的函数都有`prototype`
-这个属性。
+那么这个函数肯定具有`prototype`属性。**因为我们自定义的函数都可以通过`new`操作符生成一个对象，所以我们自定义的函数都有`prototype`
+这个属性。**
 
 ```javascript
 // 函数字面量
@@ -118,11 +118,11 @@ Function.__proto__ === Function.prototype // true
 Function.prototype.__proto__ === Object.prototype // true
 ```
 
-如果你能够把上面的表达式都梳理清楚的话，那么说明你对这部分知识掌握的还是不错的；
+如果你能够把上面的表达式都梳理清楚的话，那么说明你对这部分知识掌握的还是不错的。
 
 谈及JavaScript的原型和继承，那么我们还需要知道另一个概念；那就是`constructor`，那什么是`constructor`呢？
-`constructor`表示一个对象的构造函数，除了`null`和`undefined`以外，JavaScript中的所有数据类型都有这个属性；
-我们可以通过下面的代码来验证一下：
+**`constructor`表示一个对象的构造函数，除了`null`和`undefined`以外，JavaScript中的所有数据类型都有这个属性；
+我们可以通过下面的代码来验证一下：**
 ```javascript
 null.constructor // Uncaught TypeError: Cannot read property 'constructor' of null ...
 undefined.constructor // Uncaught TypeError: Cannot read property 'constructor' of undefined ...
@@ -204,9 +204,9 @@ console.log(dog.constructor === Dog); // true
 ```
 
 这篇文章到这里基本上可以告一段落了，但是其实关于JavaScript的原型与继承还有许多内容，也还有许多可以研究的地方；但是这篇文章到这里就算是结束了。
-我后面还会写一些关于JavaScript原型与继承的内容，如果大家有兴趣的话，可以关注一下。点击[这里](https://github.com/dreamapplehappy/blog/issues/3)可以发表留言。
+我后面还会写一些关于JavaScript原型与继承的内容，如果大家有兴趣的话，可以关注一下。
 
-如果本文对你有帮助，可以赞赏一下：
+点击[这里](https://github.com/dreamapplehappy/blog/issues/3)可以发表留言。如果本文对你有帮助，可以赞赏一下：
 
 ![](../../../resource/images/wechat-appreciate.jpg)
 
