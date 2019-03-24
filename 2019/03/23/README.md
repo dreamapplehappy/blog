@@ -4,6 +4,8 @@
 
 ![](https://img.shields.io/badge/%E6%97%A5%E6%9C%9F-2019--03--23-informational.svg?style=flat-square) ![](https://img.shields.io/badge/%E5%88%86%E7%B1%BB-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-7057ff.svg?style=flat-square) ![](https://img.shields.io/github/issues/detail/comments/dreamapplehappy/blog/4.svg?style=flat-square)
 
+> 在人际关系上，别人如何评价你，那是别人的课题，你根本无法左右。太在意别人的视线和评价，才会不断寻求别人的认可。对认可的追求，才扼杀了自由。由于不想被任何人讨厌，才选择了不自由的生活方式。换言之，自由就是不再寻求认可。 -《被讨厌的勇气》
+
 ---
 
 前言：其实关于这篇文章早就应该写完的，但是由于自己的拖延症，一直迟迟没有没有下笔；由于工作上一直也挺忙的，博客也好久没有更新了。最近刚好有时间就赶紧把
@@ -202,6 +204,8 @@ console.log(findPatternIndex("njhjhasuduadhjababajkjasduiuiqwehjnb", "ababa")); 
 ```
 
 完整版的代码在[这里](kmp.js)
+
+参考文章：[Computing the KMP failure function (f(k))](http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/Text/Matching-KMP2.html)
 
 点击[这里](https://github.com/dreamapplehappy/blog/issues/4)可以发表留言。如果本文对你有帮助，可以赞赏一下：
 
