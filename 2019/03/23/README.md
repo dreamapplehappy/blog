@@ -1,6 +1,8 @@
 ## 通俗易懂的讲解字符串匹配的**KMP**算法
 
-作者: [**dreamapplehappy**](https://github.com/dreamapplehappy) 日期: **2019-03-23** ![](https://img.shields.io/badge/-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-7057ff.svg?style=flat-square) ![](https://img.shields.io/github/issues/detail/comments/dreamapplehappy/blog/4.svg?style=flat-square)
+**作者**: [**dreamapplehappy**](https://github.com/dreamapplehappy)
+
+![](https://img.shields.io/badge/%E6%97%A5%E6%9C%9F-2019--03--23-informational.svg?style=flat-square) ![](https://img.shields.io/badge/-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-7057ff.svg?style=flat-square) ![](https://img.shields.io/github/issues/detail/comments/dreamapplehappy/blog/4.svg?style=flat-square)
 
 ---
 
