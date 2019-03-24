@@ -1,5 +1,15 @@
 ## 通俗易懂的讲解字符串匹配的**KMP**算法
 
+作者: [dreamapplehappy](https://github.com/dreamapplehappy)
+
+日期: **2019-03-23**
+
+标签: ![](https://img.shields.io/badge/-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-7057ff.svg?style=for-the-badge)
+
+![](https://img.shields.io/github/issues/detail/comments/dreamapplehappy/blog/4.svg)
+
+---
+
 前言：其实关于这篇文章早就应该写完的，但是由于自己的拖延症，一直迟迟没有没有下笔；由于工作上一直也挺忙的，博客也好久没有更新了。最近刚好有时间就赶紧把
 这篇文章完成了，不然估计又要拖好久。
 
@@ -196,6 +206,13 @@ console.log(findPatternIndex("njhjhasuduadhjababajkjasduiuiqwehjnb", "ababa")); 
 ```
 
 完整版的代码在[这里](kmp.js)
+
+点击[这里](https://github.com/dreamapplehappy/blog/issues/4)可以发表留言。如果本文对你有帮助，可以赞赏一下：
+
+![](../../../resource/images/wechat-appreciate.jpg)
+
+版权声明：[![知识共享许可协议](https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png)](http://creativecommons.org/licenses/by-nc-nd/3.0/) [共享-保持署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/)
+
 
 
 
