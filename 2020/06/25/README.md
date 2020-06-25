@@ -74,4 +74,4 @@ console.log(isPrime(5)); // true
 + [https://regexone.com/](https://regexone.com/)
 + [https://regexcrossword.com/](https://regexcrossword.com/)
 
-关于正则表达式匹配一个素数的原理到这里就结束啦，如果大家有什么疑问和建议都可以在这里提出来。欢迎大家关注我的公众号「关山不难越」，我们一起学习更多有用的正则知识，一起进步。
+关于正则表达式匹配一个素数的原理到这里就结束啦，如果大家有什么疑问和建议都可以在[这里](https://github.com/dreamapplehappy/blog/issues/7)提出来。欢迎大家关注我的公众号「关山不难越」，我们一起学习更多有用的正则知识，一起进步。
