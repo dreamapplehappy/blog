@@ -145,7 +145,7 @@ console.log(`当前关注公众号的用户数量是：${officialAccount.count()
 
 ## 实战：实现一个简单的TODO小应用
 
-我们可以使用观察者模式实现一个小应用，这个应用很简单，就是能够让用户添加自己的待办，并且需要显示已添加的待办事项的数量。
+我们可以使用观察者模式实现一个小应用，这个应用很简单，**就是能够让用户添加自己的待办，并且需要显示已添加的待办事项的数量**。
 
 了解了需求之后，我们需要确定那些是`一`，哪些是`多`。当然我们知道整个TODO的`状态`就是我们所说的`一`，那么对于`待办列表的展示`以及`待办列表的计数`就是我们所说的`多`。理清了思路之后，实现这个小应用就变得很简单了。
 
@@ -268,3 +268,9 @@ addBtn.onclick = () => {
 **其实我们学习这些设计模式，都是为了让代码的逻辑更加清晰明了，能够复用一些代码的逻辑，减少重复的工作，提升开发的效率。让整个应用更加容易维护和拓展。当然不能为了使用而使用，在使用之前，需要对当前的问题做一个全面的了解。到底需不需要使用某个设计模式是一个需要考虑清楚的问题。**
 
 好啦，关于观察者模式到这里就结束啦，大家如果有什么意见和建议可以在文章下面下面留言，我们一起探讨一下。也可以在[这里](https://github.com/dreamapplehappy/blog/issues/15)提出来，我们更好地进行讨论。也欢迎大家关注我的公众号**关山不难越**，随时随地获取文章的更新。
+
+参考链接：
++ [The Observer Pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript)
++ [How to Use the Observable Pattern in JavaScript](https://webdevstudios.com/2019/02/19/observable-pattern-in-javascript/)
+
+文章封面图来源：[unDraw](https://undraw.co/)
