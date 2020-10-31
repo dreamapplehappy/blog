@@ -138,7 +138,7 @@ if (config.runsInWidget) {
 
 ## 学习与交流
 
-如果你对使用 **Scriptable** 开发小组件很有兴趣，也欢迎大家进[**Scriptable小组件交流群**](./images/wechat-group.png)进行交流讨论。
+如果你对使用 **Scriptable** 开发小组件很有兴趣，也欢迎大家进[**Scriptable小组件交流群**](./images/wechat-group.jpg)进行交流讨论。
 
 文章到这里就结束了，如果你有什么意见和建议欢迎给我[留言](https://github.com/dreamapplehappy/blog/issues/16)。你还可以关注我的公众号[**关山不难越**](../../../resource/images/official-account.png)，可以及时获取最新好玩有趣文章的更新。
 
