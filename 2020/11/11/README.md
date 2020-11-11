@@ -329,3 +329,5 @@ console.log(secondPanCakeMaterials.getEgg());  // b_market_egg
 
 + [设计模式大冒险第二关：装饰者模式，煎饼果子的主场](https://mp.weixin.qq.com/s/KVy81rtB0YMeaHaem1PYMw)
 + [设计模式大冒险第一关：观察者模式](https://mp.weixin.qq.com/s/ehrBQkjtBTyyiuUo8KiBLg)
+
+文章封面图来源：[unDraw](https://undraw.co/)
