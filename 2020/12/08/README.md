@@ -25,21 +25,21 @@
 接下来我们来看一下单例模式是如何实现的。通过上面的UML类图，我们可以知道，**对于一个类来说，我们需要一个静态变量来保存实例的引用，还需要对外提供一个获取实例的静态方法**。如果使用 **ES6** 的类的语法来实现的话，可以简单的用下面的代码来表示：
 
 ```javascript
-class SingleTon {
+class Singleton {
 	// 类的静态属性
 	static instance = null;
 
 	// 类的静态方法
 	static getInstance() {
 		if (this.instance === null) {
-			this.instance = new SingleTon();
+			this.instance = new Singleton();
 		}
 		return this.instance;
 	}
 }
 
-const a = SingleTon.getInstance();
-const b = SingleTon.getInstance();
+const a = Singleton.getInstance();
+const b = Singleton.getInstance();
 
 console.log(a === b); // true
 ```
@@ -114,9 +114,9 @@ console.log(a === b);   // true
 
 所以说单例模式增加了测试的难度与复杂度，增加了测试代码的工作量。
 
-### 单例模式违背了职责的单一性
+### 单例模式违背了软件设计的单一职责原则
 
-这个比较容易理解，因为一般情况下，对于一个类来说它只负责这个类的实例具有什么功能；但是对于单例模式来说，单例模式的类还需要负责只能够产生一个实例。这违背了软件设计的单一性原则，类应该只负责其实例的具体功能，而不应该对类产生的实例个数负责。
+这个比较容易理解，因为一般情况下，对于一个类来说它只负责这个类的实例具有什么功能；但是对于单例模式来说，单例模式的类还需要负责只能够产生一个实例。这违背了软件设计的单一职责原则，类应该只负责其实例的具体功能，而不应该对类产生的实例个数负责。
 
 但是对于这个缺点来说，大家可能会有不同的看法。显而易见的是这样做确实更加方便，设计实现上也相对简单一些。
 
