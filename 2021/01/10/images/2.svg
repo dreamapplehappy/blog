@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg6918"
+   height="175"
+   width="475">
+  <defs
+     id="defs6920" />
+  <metadata
+     id="metadata6923">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(5,-77.362183)"
+     style="display:inline"
+     id="layer1">
+    <g
+       id="g103">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.21389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7006"
+         width="98.026207"
+         height="55"
+         x="76.973793"
+         y="82.362183" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.21389;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 76.973793,107.36218 H 175"
+         id="path7518" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.21389;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 76.973793,117.36218 H 175"
+         id="path7520" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         x="93"
+         y="97.362183"
+         id="text7522"><tspan
+           id="tspan7524"
+           x="93"
+           y="97.362183"
+           style="font-weight:bold;font-size:14px;line-height:1.25;-inkscape-font-specification:'Bitstream Vera Sans Bold'">Context</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         x="83"
+         y="132.36218"
+         id="text7526"><tspan
+           id="tspan7528"
+           x="83"
+           y="132.36218"
+           style="font-size:14px;line-height:1.25">+request()</tspan></text>
+    </g>
+    <path
+       id="path7539"
+       d="M 110.17857,137.36218 75,177.36218"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1" />
+    <g
+       id="g68">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 0,177.36218 h 100 l 15,15 v 25 H 0 Z"
+         id="rect7530" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 100,177.36218 v 15 h 15"
+         id="path7533" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         x="5"
+         y="207.36218"
+         id="text7535"><tspan
+           id="tspan7537"
+           x="5"
+           y="207.36218"
+           style="font-size:14px;line-height:1.25">state.handle()</tspan></text>
+    </g>
+    <rect
+       transform="rotate(-45)"
+       y="203.19576"
+       x="44.291626"
+       height="15"
+       width="15"
+       id="rect7618"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path7620"
+       d="M 261.99999,112.36218 H 195"
+       style="fill:none;stroke:#000000;stroke-width:1.8303;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       transform="translate(-6)"
+       id="g94">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.16316;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7562"
+         width="87.9972"
+         height="54.836842"
+         x="269.08157"
+         y="82.443764" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.16316;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 269.08158,107.3696 h 87.9972"
+         id="path7564" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.16316;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 269.08158,117.33993 h 87.9972"
+         id="path7566" />
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold Oblique';display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         x="293"
+         y="97.362183"
+         id="text7522-6"><tspan
+           id="tspan7524-0"
+           x="293"
+           y="97.362183"
+           style="font-style:italic;font-weight:bold;font-size:14px;line-height:1.25;-inkscape-font-specification:'Bitstream Vera Sans Bold Oblique'">State</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         x="273"
+         y="132.36218"
+         id="text7526-1"><tspan
+           style="font-size:14px;line-height:1.25"
+           id="tspan7528-5"
+           x="273"
+           y="132.36218">+handle()</tspan></text>
+    </g>
+    <g
+       transform="translate(-8)"
+       id="g246">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path7741"
+         d="m 261.07051,273.85737 -22.23077,-0.15544 11.25,-19.17469 z"
+         transform="translate(64.910257,-117.16506)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 315,167.36218 v -10"
+         id="path7745" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 230,192.36218 v -25 h 175 v 25"
+         id="path7743" />
+    </g>
+    <g
+       id="g255">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.1255;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7562-9"
+         width="152.47456"
+         height="55"
+         x="142.52544"
+         y="192.36218" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.1255;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 142.52544,217.36218 H 295"
+         id="path7564-2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.1255;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 142.52544,227.36218 H 295"
+         id="path7566-2" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold';display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         x="155"
+         y="207.36218"
+         id="text7522-6-5"><tspan
+           id="tspan7524-0-0"
+           x="155"
+           y="207.36218"
+           style="font-style:normal;font-weight:bold;font-size:14px;line-height:1.25;-inkscape-font-specification:'Bitstream Vera Sans Bold'">ConcreteStateA</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         x="150"
+         y="242.36218"
+         id="text7526-1-9"><tspan
+           style="font-size:14px;line-height:1.25"
+           id="tspan7528-5-6"
+           x="150"
+           y="242.36218">+handle()</tspan></text>
+    </g>
+    <g
+       id="g264">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.09471;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7562-9-4"
+         width="148.08914"
+         height="55"
+         x="316.91086"
+         y="192.36218" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.09471;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 316.91086,217.36218 H 465"
+         id="path7564-2-7" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2.09471;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 316.91086,227.36218 H 465"
+         id="path7566-2-4" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold';display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         x="329"
+         y="207.36218"
+         id="text7522-6-5-7"><tspan
+           id="tspan7524-0-0-4"
+           x="329"
+           y="207.36218"
+           style="font-style:normal;font-weight:bold;font-size:14px;line-height:1.25;-inkscape-font-specification:'Bitstream Vera Sans Bold'">ConcreteStateB</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         x="324"
+         y="242.36218"
+         id="text7526-1-9-0"><tspan
+           style="font-size:14px;line-height:1.25"
+           id="tspan7528-5-6-0"
+           x="324"
+           y="242.36218">+handle()</tspan></text>
+    </g>
+  </g>
+</svg>
