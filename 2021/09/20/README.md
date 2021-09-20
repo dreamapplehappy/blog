@@ -2,13 +2,13 @@
 
 ![cover](./images/cover.png)
 
-时间过得好快，距离上一篇文章 [**动手写一个简单的编译器：在JavaScript中使用Swift的尾闭包语法**](https://github.com/dreamapplehappy/blog/tree/master/2021/04/05) 发布已经过去快半年了，这半年时间也一直在想着按时更新文章；但是因为工作和生活的琐事，没有能够坚持下来。有点惭愧，感觉之前年初立下的[计划](https://github.com/dreamapplehappy/blog/tree/master/2021/01/21) 快要实现不了了。希望接下来的这一段时间能够坚持更新文章吧。
+时间过得好快，距离上一篇文章[**动手写一个简单的编译器：在JavaScript中使用Swift的尾闭包语法**](https://github.com/dreamapplehappy/blog/tree/master/2021/04/05)发布已经过去快半年了，这半年时间也一直在想着按时更新文章；但是因为工作和生活的琐事，没有能够坚持下来。有点惭愧，感觉之前年初立下的[计划](https://github.com/dreamapplehappy/blog/tree/master/2021/01/21)快要实现不了了。希望接下来的这一段时间能够坚持更新文章吧。
 
-这次要跟大家分享的是关于 [**Subresource Integrity**](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) （子资源完整性）的内容。如果平时对Web安全关注不是很多的话，可能没怎么听过这个术语。不知道也没关系，接下来我会跟大家一起来研究讨论一下这个内容，相信在看完这篇文章之后，你能够深入的理解什么是**SRI**，为什么要使用**SRI**，以及在有这方面需求的情况下如何在项目中实践使用**SRI**。
+这次要跟大家分享的是关于[**Subresource Integrity**](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)（子资源完整性）的内容。如果平时对Web安全关注不是很多的话，可能没怎么听过这个术语。不知道也没关系，接下来我会跟大家一起来研究讨论一下这个内容，相信在看完这篇文章之后，你能够深入的理解什么是**SRI**，为什么要使用**SRI**，以及在有这方面需求的情况下如何在项目中实践使用**SRI**。
 
 ## SRI是什么，以及解决了什么问题
 
-**SRI** 是 **Subresource Integrity** 的简写，表示的是子资源的完整性。比如对于我们在页面中通过`link`和`script`标签引入的样式文件或者引入使用的第三方库就是页面的的子资源。比如像下面这样：
+**SRI**是**Subresource Integrity**的简写，表示的是子资源的完整性。比如对于我们在页面中通过`link`和`script`标签引入的样式文件或者引入使用的第三方库就是页面的的子资源。比如像下面这样：
 
 ```html
 <link rel="stylesheet" 
@@ -167,7 +167,7 @@ app.use(
 
 关于**Web页面子资源完整性校验**的分享到这里也就算结束了，相信如果大家仔细看过一遍的话应该都会有一些收获的。如果大家看完后有什么建议和反馈都可以在[这里](https://github.com/dreamapplehappy/blog/issues/22)留言，或者在文章底部留言。
 
-如果大家想自己快速实践一下的话，可以参考 [**sri-demo**](https://github.com/dreamapplehappy/sri-demo/tree/integrity) 这个项目，文章中的部分例子可以在这个项目中进行实践。当然你也可以自己写一些例子去实践。毕竟自己亲身实践一下会把相应的知识记得更牢固。
+如果大家想自己快速实践一下的话，可以参考[**sri-demo**](https://github.com/dreamapplehappy/sri-demo/tree/integrity)这个项目，文章中的部分例子可以在这个项目中进行实践。当然你也可以自己写一些例子去实践。毕竟自己亲身实践一下会把相应的知识记得更牢固。
 
 也欢迎大家关注我的公众号[**关山不难越**](https://image-static.segmentfault.com/426/094/4260948368-54aad325bf3af665_articlex)，如果你觉得这篇文章写的不错，或者对你有所帮助，那就点赞分享一下吧~
 
